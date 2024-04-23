@@ -44,17 +44,18 @@ PAGE_NO      = 1
 
 
 class MirrorStatus:
-    STATUS_UPLOADING   = "Upload"
-    STATUS_DOWNLOADING = "Download"
-    STATUS_CLONING     = "Clone"
-    STATUS_QUEUEDL     = "QueueDL"
-    STATUS_QUEUEUP     = "QueueUp"
-    STATUS_PAUSED      = "Pause"
-    STATUS_ARCHIVING   = "Archive"
-    STATUS_EXTRACTING  = "Extract"
-    STATUS_SPLITTING   = "Split"
-    STATUS_CHECKING    = "CheckUp"
-    STATUS_SEEDING     = "Seed"
+    STATUS_UPLOADING    = "🅄🄿🄻🄾🄰🄳🄸🄽🄶"
+    STATUS_DOWNLOADING  = "🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶"
+    STATUS_CLONING      = "🄲🄻🄾🄽🄸🄽🄶"
+    STATUS_QUEUEDL      = "🅀🅄🄴🅄🄴🄳🄻"
+    STATUS_QUEUEUP      = "🅀🅄🄴🅄🄴🅄🄿"
+    STATUS_PAUSED       = "🄿🄰🅄🅂🄴🄳"
+    STATUS_ARCHIVING    = "🄰🅁🄲🄷🄸🅅🄸🄽🄶"
+    STATUS_EXTRACTING   = "🄴🅇🅃🅁🄰🄲🅃🄸🄽🄶"
+    STATUS_SPLITTING    = "🅂🄿🄻🄸🅃🅃🄸🄽🄶"
+    STATUS_CHECKING     = "🄲🄷🄴🄲🄺🄸🄽🄶"
+    STATUS_SEEDING      = "🅂🄴🄴🄳🄸🄽🄶"
+
 
 
 class setInterval:
@@ -139,12 +140,12 @@ def handleIndex(index, dic):
 def get_progress_bar_string(pct):
     pct = float(str(pct).strip('%'))
     p = min(max(pct, 0), 100)
-    cFull = int(p // 7)
-    cPart = int(p % 7 - 1)
-    p_str = '■' * cFull
+    cFull = int(p // 12)
+    cPart = int(p % 12 - 1)
+    p_str = '⬤' * cFull
     if cPart >= 0:
-        p_str += ['◰', '◳', '◲', '◱', '▣', '■'][cPart]
-    p_str += '▢' * (12 - cFull)
+        p_str += ['➊', '➋', '➌', '➍', '➎', '➏', '➐', '➑', '➒', '➓', '⬤'][cPart]
+    p_str += '◯' * (12 - cFull)
     return f"[{p_str}]"
 
 
