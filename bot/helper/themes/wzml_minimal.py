@@ -176,12 +176,12 @@ class WZMLStyle:
     STATUS_NAME =       '<b><i>{Name}</i></b>'
 
     #####---------PROGRESSIVE STATUS-------
-    BAR =               '\n⎆ {Bar}'
+    BAR =               '\n⏳ {Bar}'
     PROCESSED =         '\n⎆ <b>Processed:</b> {Processed}'
     STATUS =            '\n⎆ <b>Status:</b> <a href="{Url}">{Status}</a>'
-    ETA =                                                ' | <b>ETA:</b> {Eta}'
+    ETA =               '\n⎆ <b>ETA:</b> {Eta}'
     SPEED =             '\n⎆ <b>Speed:</b> {Speed}'
-    ELAPSED =                                     ' | <b>Elapsed:</b> {Elapsed}'
+    ELAPSED =           '\n⎆ <b>Elapsed:</b> {Elapsed}'
     ENGINE =            '\n⎆ <b>Engine:</b> {Engine}'
     STA_MODE =          '\n⎆ <b>Mode:</b> {Mode}'
     SEEDERS =           '\n⎆ <b>Seeders:</b> {Seeders} | '
@@ -200,10 +200,10 @@ class WZMLStyle:
     NON_ENGINE =     '\n⎆ <b>Engine:</b> {Engine}'
 
     ####--------OVERALL MSG FOOTER----------
-    USER =              '\n⎆ <b>User:</b> <code>{User}</code> | '
-    ID =                                                        '<b>ID:</b> <code>{Id}</code>'
+    USER =              '\n👻 <b>User:</b> <code>{User}</code>'
+    ID =                '\n🍫 <b>ID:</b> <code>{Id}</code>'
     BTSEL =          '\n⎆ <b>Select:</b> {Btsel}'
-    CANCEL =         '\n⎆ {Cancel}\n\n'
+    CANCEL =         '\n❌{Cancel}\n\n'
 
     ####------FOOTER--------
     FOOTER = '♜ <b><i>@TELLYCLOUD_BOTS Stats</i></b>\n'
