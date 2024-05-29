@@ -596,17 +596,6 @@ def terabox(url):
     details = {'contents':[], 'title': '', 'total_size': 0}
     details["header"] = ' '.join(f'{key}: {value}' for key, value in cookies.items())
 
-Add function
-
-def replace_terabox_link(original_url):
-    # Replace the domain and path in the original URL
-    new_url = original_url.replace("https://d.1024tera.com/", "https://d8.freeterabox.com/")
-    return new_url
-
-Replace 
-url': (content['dlink']),
-With
-'url': replace_terabox_link(content['dlink']), # Replace the dlink with modified URL
 
     def __fetch_links(session, dir_='', folderPath=''):
         params = {
